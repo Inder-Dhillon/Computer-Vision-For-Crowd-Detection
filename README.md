@@ -5,6 +5,12 @@
 4. Run `pip install -r requirements.txt` to get the dependencies
 5. Your project is now set up
 
+## Yolov3
+1. download the model at from [here](https://drive.google.com/file/d/1wdW76M0VDxycQ81MSQWxxh08ermgD8te/view?usp=sharing) and unzip it.
+2. make sure you have python 3.8 or later
+3. `cd` into the directory and instal the requirements using `pip install -r requirements.txt`
+4. run the model on an image using `python detect.py --source {IMG_PATH} --conf-thres {DETECTION_THRESHOLD}` where {IMG_PATH} is the path to the image and {DETECTION_THRESHOLD} is a float between 0.0 and 1.0
+
 ***
 # Computer Vision For Crowd Detection
 
