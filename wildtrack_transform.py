@@ -118,7 +118,7 @@ ct = 0
 for f in pklfiles:
     with open(path + '/' + f, 'rb') as f:
         d = pickle5.load(f)
-        c = get_centers(d,ct)
+        c = get_detections_for_camera(d,ct)
         everycam.append(c)
         ct +=1
 
