@@ -13,3 +13,11 @@ Detection and monitoring of crowds using computer vision has applications in cro
 
 ### Data
 We used the WILDTRACK dataset for this project.
+
+### Repo Structure
+Different components of the project are divided into seperate branches:
+1. wildtrack_dataset contains the homography transformation and distance calulation functions.
+2. YOLO branch contains the YOLOv3 model code.
+3. evaluation branch contains the code to run the evaluation metrics.
+4. Kernel_Density_Estimation contains the KDE code.
+5. main branch contains the script to generate location position predictions and saves them to .pkl files.
