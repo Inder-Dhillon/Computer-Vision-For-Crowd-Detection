@@ -12,4 +12,4 @@ Detection and monitoring of crowds using computer vision has applications in cro
  - Youssef Guirguis
 
 ### Data
-We will use the University of Amsterdam Multi-Camera Multi-Person dataset, which contains video clips of individuals and crowds interacting in two different environments. The dataset is labelled with ground truth pedestrian locations, and contains details on camera calibration. In case we run into problems with this dataset, we have identified the ‘EPFL Multi-camera Pedestrian dataset’ and ‘CityUHK-X: crowd dataset with extrinsic camera parameters’ as possible alternatives.
+We used the WILDTRACK dataset for this project.
