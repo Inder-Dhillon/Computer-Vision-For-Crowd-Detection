@@ -2,6 +2,8 @@ import numpy as np
 from itertools import combinations
 import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
+import pickle5
+import json
 
 
 def get_distance(p1, p2):
@@ -22,10 +24,24 @@ def plot_positions(list_positions, safe_threshold):
         ax.plot(j, k, clr)
         #ax.text(m[0], m[1], s)
   ax.scatter(*zip(*list_positions), c='b')
-  #ax.legend([Line2D([0], [0], marker='o', color='w', label='Circle', markerfacecolor='b', markersize=8)],["Count: "+str(len(listpts))], loc='upper left')
+  ax.legend([Line2D([0], [0], marker='o', color='w', label='Circle', markerfacecolor='b', markersize=8)],["Count: "+str(len(list_positions))], loc='upper left')
   return fig
 
 def pixels_to_cm(pixels, conv_scale):
     return pixels * conv_scale
 
+centers = pickle5.load(open("yolocenters" , "rb"))
 
+allframe = []
+for fnum, info in centers.items():
+    fr = []
+    person = 1
+    allframe.append(info)
+
+framenum = 386
+frpts = framenum * 2
+print(allframe[framenum])
+
+fig = plot_positions(allframe[framenum],400)
+
+plt.show()
